@@ -23,6 +23,7 @@
 ```yaml
 name: Quote workflow
 on:
+  push:
   schedule: # Run workflow automatically
     - cron: '0 * * * *' # Runs every hour, on the hour
 
