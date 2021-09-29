@@ -5,6 +5,7 @@ const http = require('https');
 const init = async () => {
 
     let readData = fs.readFileSync('README.md', 'utf8')
+    readData = readData.toString()
 
     http.request("https://quotable.io/random", function (res) {
         res.setEncoding('utf8');
@@ -15,7 +16,7 @@ const init = async () => {
 
             let quoteTxt = `<!-- QUOTE:START -->\n<p align="center"><br><i>${data.content}</i><br><i>– ${data.author}.</i><br></p>\n<!-- QUOTE:END -->`;
 
-            readData = readData.replace(/<!-- QUOTE:START -->(.|\n)*<!-- QUOTE:END -->/gm, quoteTxt)
+            readData = readData.replace(/(?:<!-- QUOTE:START -->)([\s\S]*)(?:<!-- QUOTE:END -->)/g, quoteTxt)
 
             console.log(quoteTxt)
 
