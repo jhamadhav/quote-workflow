@@ -37,10 +37,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Setup node 14
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
       - name: pull script to get quote
         uses: jhamadhav/quote-workflow@main
       - name: Commit and push changes
@@ -50,7 +46,6 @@ jobs:
           git add -A
           git commit -m "New Quote added"
           git push
-
 ```
 
 1. Commit and wait for it to run automatically or you can also trigger it manually to see the result instantly. To trigger the workflow manually.
