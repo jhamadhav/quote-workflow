@@ -4,6 +4,10 @@
 <a target="_blank" href="https://jhamadhav.com/" alt="Quote demo"><img src="./assests/images/quoteDemo.png"></img></a>
 </p>
 
+## Quote sample
+<!-- QUOTE:START -->
+<!-- QUOTE:END -->
+
 ## How to use
 
 1. Star this repo 😛

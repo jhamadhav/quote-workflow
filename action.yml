@@ -1,0 +1,7 @@
+name: 'Quote workflow'
+author: 'Madhav Jha'
+description: 'Add Quotes in readme'
+
+runs:
+  using: node12
+  main: quote-workflow.js
