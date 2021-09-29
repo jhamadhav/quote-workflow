@@ -55,6 +55,14 @@ jobs:
 
 1. Commit and wait for it to run automatically or you can also trigger it manually to see the result instantly. To trigger the workflow manually.
 
+## Thanks to
+
+- [freeCodeCamp](https://github.com/lukePeavey/quotable) for making this amazing quote api free for all
+
+- [Gautam krishna R](https://github.com/gautamkrishnar/blog-post-workflow) for his brilliant `blog-post-workflow` that I have been using and which inspired me to make this `quote-workflow` of my own. I got to learn a lot of stuff from reading his code and README.
+
+- [Suraj Jha](https://jhasuraj.com) with whom I discussed and lot and we both learned bunch of things while exploring github actions/workflow and more
+
 ## Bugs
 
 If you are experiencing any bugs, don’t forget to open a [new issue](https://github.com/jhamadhav/quote-workflow/issues/new).
