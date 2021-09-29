@@ -6,6 +6,7 @@
 
 ## Quote sample
 <!-- QUOTE:START -->
+<p align="center"><br><i>If you change the way you look at things, the things you look at change.</i><br><i>– Wayne Dyer.</i><br></p>      
 <!-- QUOTE:END -->
 
 ## How to use

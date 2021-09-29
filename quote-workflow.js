@@ -13,16 +13,11 @@ const init = async () => {
             data = JSON.parse(chunk)
             console.log(data);
 
-            let quoteTxt = `<p align="center">
-            <br>
-            <i>${data.content}</i>
-            <br>
-            <i>– ${data.author}.</i>
-            <br>
-         <br>`
+            let quoteTxt = `<!-- QUOTE:START -->\n<p align="center"><br><i>${data.content}</i><br><i>– ${data.author}.</i><br></p>\n<!-- QUOTE:END -->`;
+
             readData = readData.replace(/<!-- QUOTE:START -->(.|\n)*<!-- QUOTE:END -->/gm, quoteTxt)
 
-            console.log(readData)
+            console.log(quoteTxt)
 
             fs.writeFile("README.md", readData, function (err) {
                 if (err) {
