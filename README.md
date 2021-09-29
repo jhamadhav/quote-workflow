@@ -25,7 +25,7 @@ name: Quote workflow
 on:
   push:
   schedule: # Run workflow automatically
-    - cron: '0 * * * *' # Runs every hour, on the hour
+    - cron: '0 */6 * * *' # Runs every six hour
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
