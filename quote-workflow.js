@@ -14,7 +14,7 @@ const init = async () => {
             data = JSON.parse(chunk)
             console.log(data);
 
-            let quoteTxt = `<!-- QUOTE:START -->\n<p align="center"><br><i>${data.content}</i><br><i>– ${data.author}.</i><br></p>\n<!-- QUOTE:END -->`;
+            let quoteTxt = `<!-- QUOTE:START -->\n<a href="https://github.com/jhamadhav/quote-workflow" style="text-decoration:none;color:inherit;"><p align="center"><br><i>${data.content}</i><br><i>– ${data.author}.</i><br></p></a>\n<!-- QUOTE:END -->`;
 
             readData = readData.replace(/(?:<!-- QUOTE:START -->)([\s\S]*)(?:<!-- QUOTE:END -->)/g, quoteTxt)
 
